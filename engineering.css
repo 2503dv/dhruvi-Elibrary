@@ -1,0 +1,25 @@
+.eng-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    padding: 10px;
+}
+
+.eng-item {
+    /* border: 2px solid black; */
+    margin: 15px;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.eng-item img {
+    border-radius: 1.5rem;
+    width: 364px;
+    height: 244px;
+    margin: 25px;
+
+}
+
+h2 {
+    margin: 0px;
+}

@@ -1,0 +1,36 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    padding: 10px;
+}
+
+/* .about_con{
+    margin-left: 270px;
+    margin-right: 10px;
+} */
+.about-item {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+    background: #2592a3;
+    color: #f1e9e9;
+
+
+}
+
+.about-heading {
+    font-size: 38px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#about {
+    background: gray;
+    margin-right: 10px;
+    background: white;
+    border-radius: 0.5rem;
+    margin-left: 270px;
+}

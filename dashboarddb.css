@@ -1,0 +1,195 @@
+/* #dashboard{
+   
+    
+} */
+
+.dash-main {
+    background: #d1c9c9;
+}
+
+/* .dashboard-container */
+.wholedashboard {
+    margin-left: 256px;
+
+}
+
+.dash-no {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    padding: 10px;
+}
+
+.ser-deltails::selection {
+    background: #def3f7;
+    text-shadow: none;
+}
+
+.item {
+    color: rgb(66, 65, 65);
+    padding-left: 20px;
+    /* padding: 20px; */
+    font-size: 16px;
+    text-align: center;
+}
+
+.dash-icon {
+    margin-left: 159px;
+    font-size: 64px;
+}
+
+.services-icon {
+    color: #444;
+    display: flex;
+    justify-content: auto auto;
+    /* display: inline-block; */
+    font-size: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    /* margin-bottom: 20px; */
+}
+
+.ser-deltails {
+    /* padding-top: 40px; */
+    padding-top: 18px;
+    padding-bottom: 7px;
+    margin-right: 15px;
+    border: 2px solid black;
+    transition: all 0.5s ease 0s;
+}
+
+.ser-deltails:hover h4,
+.ser-deltails:hover .services-icon {
+    color: #c2d5d8;
+}
+
+.item h4 {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.dash-txt {
+    text-align: left;
+}
+
+.red {
+    background: #9e5959;
+}
+
+.blue {
+    background: #0e6775;
+}
+
+.green {
+    background: #668f66;
+}
+
+.orange {
+    background: #8f6c2c;
+}
+
+.total-books a {
+    text-decoration: none;
+    color: #444;
+}
+
+
+.total-books a {
+    text-decoration: none;
+    color: #444;
+    border-radius: 0.5rem;
+    padding: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background: #41929e;
+}
+
+.total-return a {
+    text-decoration: none;
+    color: #444;
+    border-radius: 0.5rem;
+    padding: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background: #bd8f3a;
+}
+
+.total-borrow a {
+    text-decoration: none;
+    color: #444;
+    border-radius: 0.5rem;
+    padding: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background: #c36868;
+}
+
+.total-students a {
+    text-decoration: none;
+    color: #444;
+    border-radius: 0.5rem;
+    padding: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background: #8abf8a;
+}
+
+.total-students a:hover,
+.total-borrow a:hover,
+.total-return a:hover,
+.total-books a:hover {
+    background: #def3f7;
+}
+
+.dash-transaction {
+    background: white;
+    margin-right: 10px;
+    border-radius: 0.5rem;
+    margin-top: 16px;
+}
+
+.trans-head {
+    padding-left: 10px;
+}
+
+.trans-header {
+    display: grid;
+    grid-template-columns: auto 133px 80px;
+}
+
+.trans-year {
+    margin-right: 10px;
+}
+
+.years {
+    padding-top: 22px;
+    font-size: 19px;
+    font-weight: 63px;
+    font-weight: 600;
+}
+
+select {
+    padding-top: 0px;
+    margin-top: 18px;
+    margin-bottom: 24px;
+    /* text-align: center; */
+    padding-left: 11px;
+    margin-right: 8px;
+}
+
+.bt {
+    margin-left: 200px;
+}
+
+.report-img {
+    width: 1014px;
+    margin-left: 115px;
+    margin-top: 17px;
+    margin-right: 58px;
+}

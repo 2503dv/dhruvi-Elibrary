@@ -1,0 +1,52 @@
+#searchbar {
+    margin-left: 15%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#popup5 input[type=text] {
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+		change its width to 100% */
+#popup5 input[type=text]:focus {
+    width: 70%;
+}
+
+#list {
+    font-size: 1.5em;
+    margin-left: 90px;
+}
+
+.animals {
+    display: list-item;
+}
+
+.searchlink-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    padding: 10px;
+}
+
+.searchlink1 {
+    margin: 5px;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: #5f5f56;
+    background: #c6bbbb;
+    border: 2px solid black;
+}
+
+.searchlink-grid li {
+    list-style: none;
+}
+
+#list a {
+    color: #444;
+    text-decoration: none;
+}

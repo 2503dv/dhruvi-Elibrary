@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chartdb.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <div class="chart-con">
+     <select id="chartType">
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+</select>
+   <h3> <i class="fa fa-circle chart-icon"></i>green for Borrow </h3>
+    <h3> <i class="fa fa-circle chart-b"></i>blue for return</h3>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'></script>
+
+
+<canvas id="myChart"></canvas>
+</div>
+<script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+ ctx.canvas.width = 900;
+ ctx.canvas.height = 200;
+
+ var dataMap = {
+     '2019': {
+         method: 'Line',
+         data: {
+             labels: ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"],
+             datasets: [{
+                 label: "My Second dataset",
+                 fillColor: "green",
+                 strokeColor: "rgba(151,187,205,0.8)",
+                 highlightFill: "rgba(151,187,205,0.75)",
+                 highlightStroke: "rgba(151,187,205,1)",
+                 data: [1, 0, 0, 9, 6, 27, 9,1,0,3,2,5]
+             },{
+                  label: "My first dataset",
+                 fillColor: "#3ec1d5",
+                 strokeColor: "rgba(200,200,200,0.8)",
+                 highlightFill: "rgba(200,200,200,0.75)",
+                 highlightStroke: "rgba(200,200,200,1)",
+                 data: [0,1,0,8,7,20,14,2,6,0,3,5]
+             }],
+         }
+     },
+     '2020': {
+         method: 'Line',
+         data: {
+             labels: ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"],
+             datasets: [{
+                 label: "My Second dataset",
+                 fillColor: "green",
+                 strokeColor: "rgba(151,187,205,0.8)",
+                 highlightFill: "rgba(151,187,205,0.75)",
+                 highlightStroke: "rgba(151,187,205,1)",
+                 data: [8, 48, 0, 9, 5, 7, 9,1,8,0,7,4]
+             },{
+                  label: "My first dataset",
+                 fillColor: "#3ec1d5",
+                 strokeColor: "rgba(200,200,200,0.8)",
+                 highlightFill: "rgba(200,200,200,0.75)",
+                 highlightStroke: "rgba(200,200,200,1)",
+                 data: [1, 0, 0, 9, 6, 27, 9,1,0,3,2,5]
+             }],
+         }
+     },
+     '2021': {
+         method: 'Line',
+         data: {
+              labels: ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"],
+             datasets: [{
+                 label: "My Second dataset",
+                 fillColor: "green",
+                 strokeColor: "rgba(151,187,205,0.8)",
+                 highlightFill: "rgba(151,187,205,0.75)",
+                 highlightStroke: "rgba(151,187,205,1)",
+                 data: [28, 48, 0, 19, 0,0, 0, 0,0,0,0,0,0]
+             },{
+                  label: "My first dataset",
+                 fillColor: "#3ec1d5",
+                 strokeColor: "rgba(200,200,200,0.8)",
+                 highlightFill: "rgba(200,200,200,0.75)",
+                 highlightStroke: "rgba(200,200,200,1)",
+                 data:[8, 48, 0, 9, 0, 0, 0,0,0,0,0,0]
+             }],
+         }
+     }
+    
+ };
+
+var currentChart;
+
+ function updateChart() {
+     if(currentChart){currentChart.destroy();}
+   
+     var determineChart = $("#chartType").val();
+
+     var params = dataMap[determineChart]
+     currentChart = new Chart(ctx)[params.method](params.data, {});
+ }
+
+ $('#chartType').on('change', updateChart)
+ updateChart();
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.harry-grid {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    padding: 10px;
+
+}
+
+.harry-item {
+    border: 2px solid black;
+    height: 558px;
+    text-align: center;
+    width: 370px;
+    background: #eceff1;
+    margin: 20px;
+}
+
+.harry-item img {
+    height: 326px;
+    width: 239px;
+    margin: 19px;
+}
+
+.harry-con {}
+
+.harry-ht {
+    /* border: 2px solid black; */
+    color: black;
+}
+
+.author {
+    color: black;
+    margin-bottom: 3px;
+}
+
+.published {
+    color: black;
+}
+
+.fiction {
+    /* color: black; */
+    background: #a9b8e5;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    margin: 6px;
+    /* margin-top: 30px; */
+    padding: 4px;
+    border-radius: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fic-con {
+    margin-top: 14px;
+}
